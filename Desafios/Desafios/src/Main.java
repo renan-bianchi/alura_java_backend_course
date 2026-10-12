@@ -1,13 +1,13 @@
-import java.awt.*;
-import java.util.Scanner;
-import br.com.alura.exercises.OO.gettersandsetters.bankaccountexercise.BankAccount;
-import br.com.alura.exercises.OO.gettersandsetters.produtosloja.MenuLoja;
-import br.com.alura.exercises.OO.gettersandsetters.verificadormaioridade.IdadePessoa;
+import br.com.alura.exercises.OO.interfaces.conversortemperatura.ConversorTemperaturaPadrao;
+import br.com.alura.exercises.OO.listasarraysetc.loopsereferencias.Animal;
+import br.com.alura.exercises.OO.listasarraysetc.loopsereferencias.Cachorro;
+
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
 
-        Scanner selectExercise = new Scanner(System.in);
+        /*Scanner selectExercise = new Scanner(System.in);
         System.out.println("""
                 Hello! What exercise do you want to view?
                 1 - Bank Account
@@ -31,6 +31,51 @@ public class Main {
             default:
                 System.out.println("Invalid option!");
                 break;
-        }
+        }*/
+
+        //############################################################################################
+
+        /*
+        CalculadoraSalaRetangular novoCalculo = new CalculadoraSalaRetangular();
+        novoCalculo.setBase(2);
+        novoCalculo.setAltura(5);
+        System.out.println("area: "+ novoCalculo.calcularArea());
+        System.out.println("perimetro: "+ novoCalculo.calcularPerimetro());
+        */
+
+        //#############################################################################################
+
+        /*TabuadaMultiplicacao novaTabuada = new TabuadaMultiplicacao();
+        novaTabuada.setFatorTabuada(3);
+        novaTabuada.mostrarTabuada();*/
+
+        //#############################################################################################
+
+        /*ConversorTemperaturaPadrao novaConversao = new ConversorTemperaturaPadrao();
+        novaConversao.setTemperatura(25.5);
+        novaConversao.setSeletorFunc(1);
+        novaConversao.selecionaFunc();*/
+
+        //#############################################################################################
+
+        // Crie um ArrayList de strings e utilize um loop foreach para percorrer e imprimir cada elemento da lista.
+//        ArrayList<String> myStrings = new ArrayList<>();
+//        myStrings.add("primera");
+//        myStrings.add("segunda");
+//        myStrings.add("terceira");
+//        myStrings.add("quarta");
+//
+//        for( String myString : myStrings ){
+//            System.out.println(myString);
+//        }
+
+        //#############################################################################################
+
+        // Crie uma classe Animal e uma classe Cachorro que herda de Animal. Em seguida, crie um objeto da
+        // classe Cachorro e faça o casting para a classe Animal.
+
+        Cachorro meuDog = new Cachorro();
+
+
     }
 }

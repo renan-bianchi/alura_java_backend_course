@@ -1,12 +1,18 @@
 package br.com.alura.screenmatch.modelos;
 
-public class Titulo {
+
+public class Titulo implements Comparable<Titulo>{
     private String nome;
     private int anoDeLancamento;
     private int duracaoEmMinutos;
     private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
     private int totalDeAvaliacoes;
+
+    public Titulo(String nome, int anoDeLancamento) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
 
     public void exibeFichaTecnica(){
         System.out.println("Nome do filme: " + nome);
@@ -62,5 +68,15 @@ public class Titulo {
 
     public double pegaMedia(){
         return somaDasAvaliacoes / totalDeAvaliacoes;
+    }
+
+    @Override
+    public int compareTo(Titulo outroTitulo) {
+        return this.getNome().compareTo(outroTitulo.getNome());
+        // retorna ->
+        // this.getNome() -> conteúdo da variável nome
+        // .compareTo(outroTitulo.getNome()) -> como o conteúdo de this.getNome é uma String,
+        // é possível executar o method compareTo que faz parte da classe String
+        // assim ele compara o conteúdo de "nome" da instâcnia atual com o da instância que é recebida como parâmetro
     }
 }
