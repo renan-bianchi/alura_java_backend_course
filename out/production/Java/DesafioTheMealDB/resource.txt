@@ -1,6 +1,0 @@
-api_key = 1
-
-referenceURL = https://www.themealdb.com/api/json/v1/
-key = 1
-serchStr = /search.php?s=
-receipt = Arrabiata
